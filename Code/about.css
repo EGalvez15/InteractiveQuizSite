@@ -1,0 +1,118 @@
+body{
+
+	font-family: 'Josefin Sans', sans-serif; 
+	color: white;
+}
+
+html{
+	height: 100%
+}
+
+#content{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px  rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1)
+
+}
+
+hr{
+	width: 300px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+.title{
+	display: inline-block;
+	position: relative;
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+#head{
+	display: inline-block;
+	color: black;
+	position: absolute;
+	font-family: 'Josefin Sans', sans-serif; 
+
+	width: 200px;
+	height: 55px;
+	font-size: 300%;
+	border-bottom: 2px solid rgba(0,0,0,0.8);
+	float: left;
+}
+#arrow{
+	position: absolute;
+	display: inline-block;
+	width: 200px;
+	height: 150px;
+	top: 50px;
+	left: 59%;
+	float: left;
+	z-index: 1;
+	transform: rotate(100deg);
+	transition: 1.5s;
+}
+#arrow > img{
+	opacity: 1;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+#arrow:hover{
+	width: 400px;
+	height: 325px;
+	transform: rotate(0deg);
+	transition: 1.5s;
+}
+
+#pic{
+	width: 350px;
+	height: 300px;
+	top: 200px;
+	display: inline-block;
+	position: absolute;
+	float: right;
+	left: 68%;
+
+}
+#pic > img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#paragraph{
+	top:150px;
+	max-width: 50%;
+	position: absolute;
+	display: inline-block;
+}
+#paragraph > p{
+	color: black;
+	font-size: 2rem;
+}
+.title > div{
+	width: 20vh
+	height: 20vh;
+}
+
+.outer{
+	padding-left: 100px;
+/*	border-bottom: 2px solid rgba(0,0,0,0.8);*/
+	color: black;
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+}
+.outer:hover{
+	color: rgba(0,0,0,0.4);
+}
+
+.outer > a{
+
+	font-size: 3rem;
+}

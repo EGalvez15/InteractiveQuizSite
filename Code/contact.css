@@ -1,0 +1,45 @@
+body{
+
+	font-family: 'Josefin Sans', sans-serif; 
+/*	color: white;*/
+}
+
+html{
+	height: 100%
+}
+
+
+
+ h1{
+	text-align: center;
+	font-size: 4rem;
+	text-decoration: underline;
+	color: black;
+}
+
+.wrapper{
+	width: 600px;
+	height: 600px;
+	display: grid;
+	margin: auto;
+	grid-template-columns: 50% 50%;
+}
+.wrapper > div{
+	margin: 1em;
+	padding: 1em;
+
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper > div > img{
+	
+	width: 80%;
+	height: 80%;
+	transition: 2s;
+}
+.wrapper > div > img:hover{
+	
+	transform: scale(1.2);
+	transition: 2s;
+}

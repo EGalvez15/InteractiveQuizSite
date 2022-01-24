@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>And your dog is...</title>
+
+	<script src="DogSelector.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="result.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default"> 
+		<!-- will always display navbar on top even when scrolling -->
+	<div class="container">
+		<div class="navbar-header">
+		<!-- the code below will display the button when screen is small enough -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-nav-demo" aria-expanded="false">
+				<!-- has a data target so which id it corresponds to it will collapse accordingly -->
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><span class="fa fa-paw" aria-hidden="true"></span> Perfect Dog </a>
+			<!-- this can be used to click and bring user back to homepage -->
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-nav-demo">
+			<!--  this div hides the about and contact options -->
+			<ul class="nav navbar-nav">
+				<li onclick="home(this,event)"><a href="#">Home</a></li>
+				<li onclick="about(this,event)"><a href="#">About</a></li>
+				<li onclick="contact(this,event)"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+
+<h1>Here all possible dogs you could have gotten!</h1>
+<div class="fotorama" data-autoplay="3000" data-loop="true" data-width="100%">
+  <img src="Images/Dogs/ShihTzu.jpg" data-caption="Shih Tzu">
+  <img src="Images/Dogs/terrier.jpg" data-caption="Terrier">
+  <img src="Images/Dogs/bulldog.jpg" data-caption="Bulldog">
+  <img src="Images/Dogs/husky.jpg" data-caption="Husky">
+  <img src="Images/Dogs/poodle.jpg" data-caption="Poodle">
+  <img src="Images/Dogs/waterdog.jpg" data-caption="Portugese waterdog">
+  <img src="Images/Dogs/bernese.jpg" data-caption="Bernese mt dog">
+  <img src="Images/Dogs/shepard.jpg" data-caption="German shepard">
+</div>
+
+<div class = "result">
+	<h1>However this one is special since this one is yours!</h1>
+	<div>
+		<img id="image">
+		<script> getImagePath("image");</script>
+	</div>
+</div>
+<hr>
+
+<h2>Thank You For Playing!</h2>
+
+<!-- load jQuery JavaScript library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- load fotorama plugin JavaScript code -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+
+</body>
+</html>
